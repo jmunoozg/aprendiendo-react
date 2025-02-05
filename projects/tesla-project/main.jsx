@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './src/index.css';
+import Hero from "./src/components/Hero";
 
 
-const container = document.getElementById("root");
-const root = ReactDOM.createRoot(container);
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    <p>Hola Mundo</p>
-  </React.StrictMode>
+  <>
+    <Hero />
+  </>
 );
